@@ -6,8 +6,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div className='bg-red-600'>
 
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
+    <App />
+
   </div>
 )
