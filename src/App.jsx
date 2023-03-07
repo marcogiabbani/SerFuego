@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 const sections = [
@@ -59,18 +62,36 @@ function App() {
     })
     console.log('hola')
 
-  }, [divRef])
+    revealRefs.current.forEach((el, index) => {
+
+      gsap.fromTo(el, {
+        autoAlpha:0
+      },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        ease: 'none',
+        scrollTrigger: {
+          id:`section-${index+1}`,
+          trigger: el,
+          start: 'top center+=100',
+          toggleActions: 'play none none reverse',
+          markers: true
+        }
+      })
+    })
+
+  }, [])
 
 
   const addToRefs = (el) => {
     if(el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el)
     }
-    console.log(revealRefs.current)
   }
 
   return (
-    <div className=''>
+    <div className='h-[500vh]'>
       <div ref={divRef} className='h-[100vh] bg-green-500'>
         <p className='text-center text-white text-2xl'>
           Scroll downs
