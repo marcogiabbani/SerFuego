@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import ImageDisplay from './components/hover'
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
           <span>installation</span>
         </div>
       </div>
-      <div className='text-center'>
-        <h1>SVG?</h1>
+      <div className='felx flex-row justify-center'>
+        <ImageDisplay />
       </div>
       <div className='flex justify-between'>
         <div className='flex flex-col'>
