@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
-import ImageDisplay from './components/hover'
+// import ImageDisplay from './components/hover'
+// import Oval from './components/oval'
+import OvalButton from './components/ovalButton'
 
 function App() {
 
@@ -14,8 +16,16 @@ function App() {
           <span>installation</span>
         </div>
       </div>
-      <div className='felx flex-row justify-center'>
-        <ImageDisplay />
+      <div className='w-[70vw] m-auto'>
+
+        {/* <ImageDisplay /> */}
+
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+          <ellipse cx="50" cy="25" rx="50" ry="25"
+            stroke="#000000" fill="none" strokeWidth="0.1"/>
+        </svg> */}
+        <OvalButton />
+
       </div>
       <div className='flex justify-between'>
         <div className='flex flex-col'>

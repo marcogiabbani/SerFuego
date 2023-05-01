@@ -12,7 +12,7 @@ function ImageDisplay() {
   const imagesToDisplay = artDisplay.slice(index, index + 3);
 
   return (
-    <div className="flex flex-col w-52">
+    <div className="flex flex-col w-52 m-auto">
       <button className="hover-button" onMouseEnter={handleHover}>
         Hover to Display Images
       </button>
