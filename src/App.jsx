@@ -1,5 +1,7 @@
 import React from 'react'
-import OvalButton from './components/ovalButton'
+// import OvalButton from './components/ovalButton'
+import ImageToggle from './components/ImageToggle'
+// import MouseMove from './components/mouseMove'
 
 function App() {
 
@@ -15,7 +17,9 @@ function App() {
       </div>
       <div className='w-[70vw] m-auto'>
 
-        <OvalButton />
+        {/* <OvalButton /> */}
+        <ImageToggle />
+        {/* <MouseMove /> */}
 
       </div>
       <div className='flex justify-between'>
