@@ -1,47 +1,34 @@
 import React from 'react'
-// import OvalButton from './components/ovalButton'
-import ImageToggle from './components/ImageToggle'
-// import MouseMove from './components/mouseMove'
+import {
+  Route, Routes, HashRouter
+} from 'react-router-dom';
+// import NavBar from './components/NavBar';
+import Home from './components/Home'
+import Contact from './components/Contact';
+import Installation from './components/Installation';
 
 function App() {
 
   return (
-    <div className='min-h-screen flex flex-col justify-between'>
-      <div className='flex justify-between'>
-        <h1>SerFuego</h1>
-        <div className='flex flex-col'>
-          <span>about</span>
-          <span>contact</span>
-          <span>installation</span>
+
+    <HashRouter>
+      <div className='h-screen flex flex-col justify-between'>
+        {/* <div className=''>
+          <NavBar />
+        </div> */}
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/contact" element={<Contact />} />
+            {/* include a button to return to home in the contact */}
+
+            <Route exact path="/about" element={<Installation />} />
+            {/* include a button to return to home in the Installation */}
+
+          </Routes>
         </div>
       </div>
-      <div className='w-[70vw] m-auto'>
-
-        {/* <OvalButton /> */}
-        <ImageToggle />
-        {/* <MouseMove /> */}
-
-      </div>
-      <div className='flex justify-between'>
-        <div className='flex flex-col'>
-          <span>-</span>
-          <span>data 1</span>
-          <span>data 2</span>
-          <span>data 3</span>
-          <span>data 4</span>
-          <span>-</span>
-          <div>
-            <span>  F  </span>
-            <span>  B  </span>
-            <span>  I  </span>
-            <span>  T  </span>
-          </div>
-        </div>
-        <h1>SerFuego</h1>
-      </div>
-
-    </div>
-
+    </HashRouter>
   )
 }
 
