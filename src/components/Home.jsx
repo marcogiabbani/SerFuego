@@ -17,17 +17,17 @@ function Home() {
         <ImageToggle />
       </div>
 
-      <div className='flex justify-between px-7'>
+      <div className='flex justify-between px-7  text-xl '>
 
         <div className='flex flex-col'>
           <span>-</span>
-          <span>data 1</span>
-          <span>data 2</span>
-          <span>data 3</span>
-          <span>data 4</span>
+          <span>Serfuego</span>
+          <span>Design & ArtDirection</span>
+          <span>(+54) 11 3557 7072</span>
+          <span>fuego@serfuego.com</span>
           <span>-</span>
 
-          <div>
+          <div className='w-40 flex justify-between'>
             <span>  F  </span>
             <span>  B  </span>
             <span>  I  </span>

@@ -22,7 +22,7 @@ function App() {
             <Route exact path="/contact" element={<Contact />} />
             {/* include a button to return to home in the contact */}
 
-            <Route exact path="/about" element={<Installation />} />
+            <Route exact path="/installation" element={<Installation />} />
             {/* include a button to return to home in the Installation */}
 
           </Routes>
