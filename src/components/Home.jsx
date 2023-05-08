@@ -2,6 +2,7 @@ import React from 'react'
 
 import NavBar from './NavBar'
 import ImageToggle from './ImageToggle'
+import Ellipse from './Ellipse'
 
 function Home() {
 
@@ -14,7 +15,8 @@ function Home() {
       </div>
 
       <div className='w-[100%] my-5'>
-        <ImageToggle />
+        {/* <ImageToggle /> */}
+        <Ellipse />
       </div>
 
       <div className='flex justify-between px-7  text-xl '>
