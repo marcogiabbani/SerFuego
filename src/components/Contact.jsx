@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -35,9 +36,11 @@ export default function Contact() {
 
         </div>
 
-        <div className='flex flex-col justify-between'>
-          <span className='text-[30px]'>SF ©</span>
-        </div>
+        <Link to='/'>
+          <div className='flex flex-col justify-between'>
+            <span className='text-[30px]'>SF ©</span>
+          </div>
+        </Link>
 
       </div>
     </div>

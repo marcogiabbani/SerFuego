@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Installation() {
   return (
     <div className='bg-[#ED1B24] h-screen px-14'>
-      <h1 className='text-[60px] pt-3 text-[#251F20]'>Serfuego_</h1>
+      <Link to='/'>
+
+        <h1 className='text-[60px] pt-3 text-[#251F20]'>Serfuego_</h1>
+
+      </Link>
 
       <div className='flex flex-col text-[#251F20] text-9xl pl-48 pt-32 text'>
 
@@ -43,7 +48,11 @@ export default function Installation() {
           <span>  T  </span>
         </div>
 
-        <span className='text-[30px]'>SF ©</span>
+        <Link to='/'>
+          <div>
+            <span className='text-[30px]'>SF ©</span>
+          </div>
+        </Link>
 
       </div>
     </div>
