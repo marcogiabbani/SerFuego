@@ -8,7 +8,7 @@ export default function Installation() {
       <Link to='/'>
 
         <div className='flex justify-between h-[15vh] mt-10 px-7'>
-          <h1 className='text-[60px] '>Serfuego_</h1>
+          <h1 className='text-[70px]'>Serfuego_</h1>
           <span></span>
         </div>
 

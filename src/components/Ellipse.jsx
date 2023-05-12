@@ -20,9 +20,8 @@ export default function Ellipse() {
     const positions = [];
     for (let index = 0; index < data.length ; index++) {
       const theta = index * angleStep;
-      const x = ((window.innerWidth / 5)
-       + ( window.innerWidth / 3) * Math.cos(theta) +
-        (window.innerWidth / 10)) ;
+      const x = ((window.innerWidth / 3.2)
+       + ( window.innerWidth / 3.2) * Math.cos(theta));
       const y = ((window.innerHeight / 9 )
        + (window.innerHeight / 30) * Math.sin(theta) ) ;
 
