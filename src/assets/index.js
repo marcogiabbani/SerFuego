@@ -71,6 +71,10 @@ import surf from './surf.png';
 import todoMal from './todo mal.png';
 import vhs from './vhs.png';
 
+import MinionProRegular from './MinionProRegular.otf'
+
+export { MinionProRegular }
+
 export const artDisplay = [
   {
     id: 'acid', content: acid
