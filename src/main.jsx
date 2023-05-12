@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div className='min-h-screen bg-[#ED1B24] font-serif'>
+  <div className='max-h-screen bg-[#ED1B24] font-serif'>
 
     <App />
 

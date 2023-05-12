@@ -31,17 +31,21 @@ export default function Ellipse() {
       });
     }
     setImagePositions(positions);
+    console.log('popsitions: ', positions)
   }, []);
 
   const handleMouseEnter = (index) => {
+    console.log('mouse enters')
     gsap.to(imgRef.current[index], {
-      scale: 1, transformOrigin: 'center'
+      autoAlpha: 1,
+      duration: 0.001,
     });
   };
 
-  const handleMouseLeave = () => {
-    gsap.to(imgRef.current, {
-      scale: 0, transformOrigin: 'center'
+  const handleMouseLeave = (index) => {
+    gsap.to(imgRef.current[index], {
+      autoAlpha:0,
+      duration: 0.001,
     });
   };
 
@@ -51,14 +55,17 @@ export default function Ellipse() {
     const y = cy + ry * Math.sin(theta) -1;
 
     return (
-      <foreignObject key={index} x={x} y={y} width="5" height="5" className='flex'>
-        <button
-          className='text-[2px] opacity-0'
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={() => handleMouseLeave(index)}
-        >
-          hola
-        </button>
+      <foreignObject key={index} x={x} y={y} width="5" height="5">
+        <div className=''>
+
+          <button
+            className='text-[20px] opacity-1 z-10'
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
+          >
+          Invisible button
+          </button>
+        </div>
       </foreignObject>
     );
   });
@@ -66,7 +73,7 @@ export default function Ellipse() {
   return (
     <div>
 
-      <svg viewBox="0 0 100 30">
+      <svg viewBox="0 0 100 30" >
         <ellipse cx={cx} cy={cy} rx={rx} ry={ry} stroke="#000000" fill="none" strokeWidth="0.1"/>
         {foreignObjects}
       </svg>
@@ -78,7 +85,7 @@ export default function Ellipse() {
             ref={(el) => (imgRef.current[index] = el)}
             src={art.content}
             alt={art.id}
-            className='z-1 pointer-events-none absolute scale-0 first-letter:'
+            className='z-1 pointer-events-none absolute opacity-0'
             style={{
               position: 'absolute',
               left: `${imagePositions[index]?.x}px`,
