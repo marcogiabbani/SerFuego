@@ -7,7 +7,10 @@ export default function Installation() {
     <div className=' h-screen px-16 flex flex-col justify-between'>
       <Link to='/'>
 
-        <h1 className='text-[60px] pt-3 text-[#251F20]'>Serfuego_</h1>
+        <div className='flex justify-between h-[15vh] mt-10 px-7'>
+          <h1 className='text-[60px] '>Serfuego_</h1>
+          <span></span>
+        </div>
 
       </Link>
 
