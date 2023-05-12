@@ -31,14 +31,11 @@ export default function Ellipse() {
       });
     }
     setImagePositions(positions);
-    console.log('popsitions: ', positions)
   }, []);
 
   const handleMouseEnter = (index) => {
     console.log('mouse enters')
     gsap.to(imgRef.current[index], {
-      // scale: 1, transformOrigin: 'center',
-
       autoAlpha: 1,
       duration: 0.000001
     });
@@ -46,11 +43,8 @@ export default function Ellipse() {
 
   const handleMouseLeave = () => {
     gsap.to(imgRef.current, {
-      // scale: 0, transformOrigin: 'center',
-
       autoAlpha: 0,
       duration: 0.000001
-
     });
   };
 
