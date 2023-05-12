@@ -56,21 +56,20 @@ export default function Ellipse() {
 
   const foreignObjects = data.map((item, index) => {
     const theta = index * angleStep;
-    const x = cx + rx * Math.cos(theta) -3;
+    const x = cx + rx * Math.cos(theta) -1.5;
     const y = cy + ry * Math.sin(theta) -1;
 
     return (
-      <foreignObject key={index} x={x} y={y} width="5" height="5">
-        <div className=''>
+      <foreignObject key={index} x={x} y={y} width="3" height="2">
 
-          <button
-            className='text-[20px] opacity-1 z-10'
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-          >
+        <button
+          className='text-[20px] opacity-1 z-10 w-full h-full'
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={() => handleMouseLeave(index)}
+        >
           Invisible button
-          </button>
-        </div>
+        </button>
+
       </foreignObject>
     );
   });
@@ -90,7 +89,7 @@ export default function Ellipse() {
             ref={(el) => (imgRef.current[index] = el)}
             src={art.content}
             alt={art.id}
-            className='z-1 pointer-events-none absolute opacity-0'
+            className='z-1 pointer-events-none absolute opacity-0 max-w-[70vw] max-h-[70vh]'
             style={{
               position: 'absolute',
               left: `${imagePositions[index]?.x}px`,

@@ -6,14 +6,14 @@ import Ellipse from './Ellipse'
 function Home() {
 
   return (
-    <div className='h-[screen] flex flex-col justify-evenly px-16 '>
+    <div className='flex flex-col justify-evenly px-16 '>
 
       <div className='flex justify-between h-[15vh] mt-10 px-7'>
         <h1 className='text-[60px] '>Serfuego_</h1>
         <NavBar />
       </div>
 
-      <div className='w-[100%] my-5'>
+      <div className='w-[100%]'>
         <Ellipse />
       </div>
 

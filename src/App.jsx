@@ -12,7 +12,7 @@ function App() {
   return (
 
     <HashRouter>
-      <div className='h-screen flex flex-col justify-between'>
+      <div className='h-[99vh] flex flex-col justify-between'>
         {/* <div className=''>
           <NavBar />
         </div> */}

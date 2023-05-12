@@ -8,6 +8,8 @@
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-family: 'MinionProRegular';
+    background-color: #FF0000;
+    
 }
 
 @font-face {
