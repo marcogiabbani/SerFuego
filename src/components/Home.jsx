@@ -24,7 +24,7 @@ function Home() {
           <span>-</span>
           <span>Serfuego</span>
           <span>Design & ArtDirection</span>
-          <span>(+54) 11 3557 7072</span>
+          <span>(+54) 11 3420 0305</span>
           <span>fuego@serfuego.com</span>
           <span>-</span>
 

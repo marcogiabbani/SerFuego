@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Installation() {
   return (
-    <div className='bg-[#ED1B24] h-screen px-14'>
+    <div className='bg-[#FF0000] h-screen px-14 flex flex-col justify-between'>
       <Link to='/'>
 
         <h1 className='text-[60px] pt-3 text-[#251F20]'>Serfuego_</h1>
@@ -14,7 +14,7 @@ export default function Installation() {
 
         <div className='pr-32'>
           <p className=' text-[60px]'>
-          Visual project that develops between 2016 and 2018.
+          Visual project that develops between 2016 and 2023.
           </p>
           <p className=' text-[60px]'>
           Serfuego© is the combination of an Artistic branding and the new look

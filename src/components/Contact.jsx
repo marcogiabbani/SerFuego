@@ -5,7 +5,7 @@ export default function Contact() {
 
   return (
     <div className='bg-black h-screen'>
-      <div className='flex flex-col text-red-600 text-9xl px-24 pt-16'>
+      <div className='flex flex-col text-[#FF0000] text-9xl px-24 pt-16'>
 
         <span className='max-h-[110px] text-[150px]'>Francisco Matte</span>
         <span className='max-h-[110px] text-[150px]'>Design & ArtDirection</span>

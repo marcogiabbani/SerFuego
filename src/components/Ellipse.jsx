@@ -20,11 +20,11 @@ export default function Ellipse() {
     const positions = [];
     for (let index = 0; index < data.length ; index++) {
       const theta = index * angleStep;
-      const x = ((window.innerWidth / 4)
+      const x = ((window.innerWidth / 5)
        + ( window.innerWidth / 3) * Math.cos(theta) +
         (window.innerWidth / 10)) ;
-      const y = ((window.innerHeight / 6 )
-       + (window.innerHeight / 24) * Math.sin(theta) ) ;
+      const y = ((window.innerHeight / 9 )
+       + (window.innerHeight / 30) * Math.sin(theta) ) ;
 
       positions.push({
         x, y
@@ -35,13 +35,20 @@ export default function Ellipse() {
 
   const handleMouseEnter = (index) => {
     gsap.to(imgRef.current[index], {
-      scale: 1, transformOrigin: 'center'
+      // scale: 1, transformOrigin: 'center',
+
+      autoAlpha: 1,
+      duration: 0.000001
     });
   };
 
   const handleMouseLeave = () => {
     gsap.to(imgRef.current, {
-      scale: 0, transformOrigin: 'center'
+      // scale: 0, transformOrigin: 'center',
+
+      autoAlpha: 0,
+      duration: 0.000001
+
     });
   };
 
@@ -78,7 +85,7 @@ export default function Ellipse() {
             ref={(el) => (imgRef.current[index] = el)}
             src={art.content}
             alt={art.id}
-            className='z-1 pointer-events-none absolute scale-0 first-letter:'
+            className='z-1 pointer-events-none absolute opacity-0'
             style={{
               position: 'absolute',
               left: `${imagePositions[index]?.x}px`,
