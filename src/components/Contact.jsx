@@ -10,7 +10,7 @@ export default function Contact() {
 
           <span className='max-h-[110px] text-[150px]'>Francisco Matte</span>
           <span className='max-h-[110px] text-[150px]'>Design & ArtDirection</span>
-          <span className='max-h-[110px] text-[150px]'>(+54) 11 3557 7072</span>
+          <span className='max-h-[110px] text-[150px]'>(+54) 11 3420 0305</span>
           <span className='max-h-[110px] text-[150px]'>fuego@serfuego.com</span>
           <span className='max-h-[110px] text-[150px]'>@serfuego</span>
           <span className='max-h-[110px] text-[150px]'>born in Barcelona_</span>
