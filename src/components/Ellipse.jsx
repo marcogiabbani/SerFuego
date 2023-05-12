@@ -2,7 +2,7 @@ import React, {
   useRef, useState, useEffect
 }from 'react'
 import { gsap } from 'gsap';
-import { artDisplay } from '../constants';
+import { artDisplay } from '../assets';
 
 export default function Ellipse() {
 
