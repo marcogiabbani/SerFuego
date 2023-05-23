@@ -5,14 +5,25 @@ import {
 import Home from './components/Home'
 import Contact from './components/Contact';
 import Installation from './components/Installation';
+import MobileHome from './components/MobileHome';
 
 function App() {
   const isMobile = window.innerWidth < 768; // Define the mobile breakpoint
   return isMobile
     ? (
-      <div >
-        <span>mobile</span>
-      </div>
+      <HashRouter>
+
+        <div className='h-[99vh] flex flex-col justify-between'>
+          <div>
+            <Routes>
+              <Route exact path="/" element={<MobileHome />} />
+              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/installation" element={<Installation />} />
+
+            </Routes>
+          </div>
+        </div>
+      </HashRouter>
     )
     : (
 
