@@ -5,6 +5,7 @@ import {
 import Home from './components/Home'
 import Contact from './components/Contact';
 import Installation from './components/Installation';
+import MobileNavBar from './components/MobileNavBar';
 import MobileHome from './components/MobileHome';
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
     ? (
       <HashRouter>
 
-        <div className='h-[99vh] flex flex-col justify-between'>
+        <div className='h-[99vh] flex flex-col'>
+          <div>
+            <MobileNavBar />
+          </div>
           <div>
             <Routes>
               <Route exact path="/" element={<MobileHome />} />
