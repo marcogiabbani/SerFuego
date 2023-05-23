@@ -23,18 +23,15 @@ export default function MobileHome() {
         {artDisplay.map(art => {
           const isImageSelected = selectedImage === art.id;
           return(
-            <div className={'relative'}
-              key={art.id}
-            >
 
-              <img
-                className={`w-full p-1 ${isImageSelected
-                  ? 'fixed top-0 left-0 right-0 bottom-0 z-50 w-full h-full object-contain'
-                  : ''}`}
-                src={art.content}
-                alt={art.id}
-                onClick={() => handleImageClick(art.id)}/>
-            </div>
+            <img
+              className={`w-full p-1 ${isImageSelected
+                ? 'fixed top-0 left-0 right-0 bottom-0 z-50 w-full h-full object-contain'
+                : ''}`}
+              src={art.content}
+              alt={art.id}
+              key={art.id}
+              onClick={() => handleImageClick(art.id)}/>
 
           )})}
 

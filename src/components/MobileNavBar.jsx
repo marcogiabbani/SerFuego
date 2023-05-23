@@ -6,7 +6,7 @@ export default function MobileNavBar() {
 
   return (
     <div>
-      <div className="flex justify-evenly sm:hidden pt-4">
+      <div className="flex justify-evenly md:hidden pt-4">
         <h1 className='text-5xl'>Serfuego_</h1>
 
         <svg

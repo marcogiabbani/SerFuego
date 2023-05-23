@@ -9,12 +9,12 @@ import MobileNavBar from './components/MobileNavBar';
 import MobileHome from './components/MobileHome';
 
 function App() {
-  const isMobile = window.innerWidth < 768; // Define the mobile breakpoint
+  const isMobile = window.innerWidth < 1060; // Define the mobile breakpoint
   return isMobile
     ? (
       <HashRouter>
 
-        <div className='h-[99vh] flex flex-col'>
+        <div className='h-[99vh] flex flex-col justify-between'>
           <div>
             <MobileNavBar />
           </div>
