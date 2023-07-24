@@ -17,7 +17,7 @@ export default function MobileHome() {
     }
   };
   return (
-    <div className=' mt-16'>
+    <div className='mt-16'>
 
       <div className="columns-2 gap-1 p-1">
         {artDisplay.map(art => {
