@@ -5,8 +5,8 @@ export default function MobileNavBar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
-      <div className="flex justify-evenly md:hidden pt-4">
+    <div className=''>
+      <div className="flex justify-evenly md:hidden pt-4 fixed top-0 w-full bg-[#FF0000]">
         <h1 className='text-5xl'>Serfuego_</h1>
 
         <svg
