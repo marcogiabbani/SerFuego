@@ -29,10 +29,11 @@ export default function MobileNavBar() {
           className={`${toggle
             ? 'flex'
             : 'hidden'} 
-            absolute top-32 justify-center left-0 pr-3 w-full min-w-[140px]
+            absolute top-16 justify-center left-0 pr-3 h-screen
+             w-full min-w-[140px]
             opacity-90 bg-[#FF0000]`}>
 
-          <ul className="flex flex-col items-center justify-evenly text-4xl h-32">
+          <ul className="flex flex-col items-center justify-evenly text-4xl">
 
             <Link to='/about' className='text-right'
               onClick={() => setToggle((prev) => !prev)}>
