@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Installation from './components/Installation';
 import MobileNavBar from './components/MobileNavBar';
 import MobileHome from './components/MobileHome';
+import MobileContact from './components/MobileContact';
 
 function App() {
   const isMobile = window.innerWidth < 1060; // Define the mobile breakpoint
@@ -21,7 +22,7 @@ function App() {
           <div>
             <Routes>
               <Route exact path="/" element={<MobileHome />} />
-              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/contact" element={<MobileContact />} />
               <Route exact path="/installation" element={<Installation />} />
 
             </Routes>
