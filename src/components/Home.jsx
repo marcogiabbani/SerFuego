@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import NavBar from './NavBar'
 import About from './About'
 import Ellipse from './Ellipse'
-import Footer from './Footer'
+import MobileFooter from './MobileFooter';
 
 function Home() {
 
@@ -50,7 +50,7 @@ function Home() {
 
       </div>
 
-      <Footer />
+      <MobileFooter />
 
     </div>
 

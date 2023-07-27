@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom'
 
 function MobileFooter() {
   return (
-    <div className='flex flex-col justify-between text-2xl'>
+    <div className='flex flex-col justify-between text-2xl 
+      md:text-[30px]'>
 
-      <div className='flex flex-col justify-between text-center'>
+      <div className='flex flex-col justify-between text-center
+        md:flex-row md:text-left'>
 
-        <div className='w-40 h-full flex flex-col justify-between m-auto'>
+        <div className='w-40 h-full m-auto flex flex-col justify-between 
+          md:h-auto md:m-0 md:flex-row'>
           <Link to='https://franciscoluismatte.com/' target="_blank">
             <span>  F  </span>
           </Link>
@@ -25,7 +28,8 @@ function MobileFooter() {
         <div>
 
           <Link to='/'>
-            <div className='text-4xl pt-4'>
+            <div className='text-4xl pt-4
+              md:text-[30px] md:p-0'>
               <span >SF ©</span>
             </div>
           </Link>

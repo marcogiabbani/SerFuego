@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Footer';
+import MobileFooter from './MobileFooter'
 
 export default function Contact() {
 
@@ -25,7 +25,7 @@ export default function Contact() {
         </div>
 
         <div className='px-16'>
-          <Footer />
+          <MobileFooter />
         </div>
       </div>
 
