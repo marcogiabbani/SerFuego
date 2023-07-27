@@ -20,7 +20,7 @@
     "rules": {
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
             "error",
@@ -38,9 +38,7 @@
             "error", { "before": true, "after": true }
         ],
         "no-console": 0,
-        "max-len": [
-          "error", { "code": 80 }, {"ignoreStrings": true}
-        ],
+
         "multiline-ternary": [
           "error", "always"
         ],
