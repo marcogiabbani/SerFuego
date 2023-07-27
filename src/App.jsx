@@ -38,7 +38,7 @@ function App() {
           <div>
             <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/contact" element={<MobileContact />} />
               <Route exact path="/installation" element={<Installation />} />
 
             </Routes>

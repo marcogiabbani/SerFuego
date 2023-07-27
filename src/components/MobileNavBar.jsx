@@ -6,7 +6,7 @@ export default function MobileNavBar() {
 
   return (
     <div className=''>
-      <div className="flex justify-evenly md:hidden pt-4 fixed top-0 w-full bg-[#FF0000]">
+      <div className="flex justify-around md:hidden pt-4 fixed top-0 w-full bg-[#FF0000]">
         <Link to='/'>
           <h1 className='text-5xl'>Serfuego_</h1>
         </Link>
