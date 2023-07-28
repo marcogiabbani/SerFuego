@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import MobileFooter from './MobileFooter';
 
 // eslint-disable-next-line react/prop-types
-export default function Installation({ fullFooter }) {
+export default function Installation() {
     return (
         <div className=' h-screen px-16 flex flex-col justify-between'>
             <Link to='/'>

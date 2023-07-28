@@ -13,7 +13,7 @@ function MobileFooter({ fullFooter }) {
                 md:flex-row md:text-left'>
 
                         <div className='w-40 h-full m-auto flex flex-col justify-between 
-                    md:h-auto md:m-0 md:flex-row'>
+                            md:h-auto md:m-0 md:flex-row text-sm md:text-2xl'>
                             <div className='pb-5 md:p-0'>
                                 <Link to='https://franciscoluismatte.com/' target="_blank">
                                     <span >  F  </span>
@@ -38,7 +38,7 @@ function MobileFooter({ fullFooter }) {
 
                         <div>
                             <Link to='/'>
-                                <div className='text-5xl pt-4
+                                <div className='text-4xl py-4
                             md:text-[30px] md:p-0'>
                                     <span >SF ©</span>
                                 </div>
@@ -50,7 +50,7 @@ function MobileFooter({ fullFooter }) {
                 :
                 <div>
                     <Link to='/'>
-                        <div className='text-5xl pt-4 text-center
+                        <div className='text-4xl py-4 text-center
                             md:text-[30px] md:p-0'>
                             <span >SF ©</span>
                         </div>
