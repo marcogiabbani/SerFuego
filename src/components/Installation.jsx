@@ -43,7 +43,7 @@ export default function Installation({ fullFooter }) {
                 </div>
 
             </div>
-            <MobileFooter fullFooter={fullFooter}/>
+            <MobileFooter fullFooter={true}/>
         </div>
     )
 }
