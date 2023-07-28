@@ -1,7 +1,8 @@
 import React from 'react'
 import MobileFooter from './MobileFooter'
 
-function MobileContact() {
+// eslint-disable-next-line react/prop-types
+function MobileContact({ fullFooter }) {
     return (
         <div className='bg-[#FF0000] h-[85vh]
             md:bg-black md:h-screen md:text-[#FF0000]'>
@@ -42,10 +43,9 @@ function MobileContact() {
                         </svg>
                     </div>
 
-
                 </div>
                 <div className='md:px-16'>
-                    <MobileFooter />
+                    <MobileFooter fullFooter={fullFooter}/>
                 </div>
 
             </div>

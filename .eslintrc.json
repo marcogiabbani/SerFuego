@@ -18,10 +18,7 @@
         "react"
     ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
+    
         "linebreak-style": [
             "error",
             "unix"
@@ -39,9 +36,6 @@
         ],
         "no-console": 0,
 
-        "multiline-ternary": [
-          "error", "always"
-        ],
         "no-multi-spaces": "error",
         "object-curly-newline": [
           "error", {

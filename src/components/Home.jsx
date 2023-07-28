@@ -50,7 +50,7 @@ function Home() {
 
       </div>
 
-      <MobileFooter />
+      <MobileFooter fullFooter={true}/>
 
     </div>
 
