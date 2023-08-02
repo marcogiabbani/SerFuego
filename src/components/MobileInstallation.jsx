@@ -19,13 +19,13 @@ function MobileInstallation({ fullFooter }) {
                     </div>
                 }
 
-                <div className='h-full flex flex-col justify-between px-3 md:pl-48 md:pt-32'>
-                    <div className='text-3xl md:text-6xl'>
+                <div className='h-full flex flex-col justify-between px-3  md:pl-48 md:pt-32'>
+                    <div className='text-3xl sm:text-5xl md:text-6xl'>
                         <p>
                             Visual project that develops between 2016 and 2023.
                         </p>
                     </div>
-                    <div className='text-3xl md:text-6xl'>
+                    <div className='text-3xl sm:text-5xl md:text-6xl'>
                         <p>
                             Serfuego© is the combination of an Artistic branding and the new look
                             at the Culture design. It ranges from astrology to the most luxurious
@@ -33,14 +33,14 @@ function MobileInstallation({ fullFooter }) {
                             worship.
                         </p>
                     </div>
-                    <div className='text-3xl md:text-6xl'>
+                    <div className='text-3xl sm:text-5xl md:text-6xl'>
                         <p>
                             The identity of a period of time of a remoto Studio
                             producing pieces of <span className='underline'> Art & Design</span>
                         </p>
                     </div>
                     {!fullFooter &&
-                        <div className='text-3xl'>
+                        <div className='text-3xl sm:text-5xl'>
                             <p>
                                 -
                             </p>

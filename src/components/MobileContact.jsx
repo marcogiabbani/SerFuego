@@ -10,7 +10,7 @@ function MobileContact({ fullFooter }) {
             <div className='h-full mt-0 flex flex-col justify-between
                 md:h-screen'>
 
-                <div className='h-full flex flex-col text-4xl m-auto
+                <div className='h-full flex flex-col text-4xl sm:text-6xl m-auto
                     md:text-9xl md:px-24 md:pt-16'>
                     <span className='pb-1 
                         md:pb-0 md:max-h-[110px] md:text-[150px]'>Francisco Matte</span>
@@ -29,7 +29,7 @@ function MobileContact({ fullFooter }) {
                 <div className='h-full max-h-[60px] flex flex-col justify-between
                     md:px-24 md:max-h-full'>
                         
-                    <div className='text-center h-full text-sm md:invisible'>
+                    <div className='text-center h-full text-sm sm:text-base md:invisible'>
                         <span className=''>
                             The phenomenon of combustion manifested in light, flame and heat.
                         </span>
