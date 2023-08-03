@@ -62,6 +62,9 @@ function MobileInstallation({ fullFooter }) {
                 </div>
                 <div className=''>
                     <MobileFooter fullFooter={fullFooter} />
+                    {/* 
+                        Aca ahcer un logo que luego de 1080 0 1920 no se muestre y se muestra el footer
+                    */}
                 </div>
             </div>
         </div>

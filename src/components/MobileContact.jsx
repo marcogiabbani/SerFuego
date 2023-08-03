@@ -46,6 +46,9 @@ function MobileContact({ fullFooter }) {
                 </div>
                 <div className='md:px-16'>
                     <MobileFooter fullFooter={fullFooter}/>
+                    {/* 
+                        Unico componente mobil donde se muestra el footer y vertical
+                    */}
                 </div>
 
             </div>
