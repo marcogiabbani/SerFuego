@@ -2,9 +2,10 @@ import React from 'react'
 import {
     Route, Routes, HashRouter
 } from 'react-router-dom';
-import Home from './components/Home'
+// import Home from './components/Home'
+// import MobileHome from './components/MobileHome';
+import FinalHome from './components/FinalHome';
 import MobileNavBar from './components/MobileNavBar';
-import MobileHome from './components/MobileHome';
 import MobileContact from './components/MobileContact';
 import MobileInstallation from './components/MobileInstallation';
 import MobileAbout from './components/MobileAbout';
@@ -20,7 +21,8 @@ function App() {
                     </div>
                     <div>
                         <Routes>
-                            <Route exact path="/" element={isMobile ? <MobileHome /> : <Home />} />
+                            {/* <Route exact path="/" element={isMobile ? <MobileHome /> : <Home />} /> */}
+                            <Route exact path="/" element={<FinalHome />} />
                             <Route exact path="/contact" element={<MobileContact fullFooter={true} />} />
                             <Route exact path="/installation" element={<MobileInstallation fullFooter={isMobile ? false : true} />} />
                             <Route exact path="/about" element={<MobileAbout fullFooter={false} />} />
