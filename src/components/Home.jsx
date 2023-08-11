@@ -5,10 +5,10 @@ import DesktopHome from './DesktopHome'
 const FinalHome = () => {
     return (
         <div className='h-screen '>
-            <div className='visible md:hidden'>
+            <div className='visible xl:hidden'>
                 <MobileHome />
             </div>
-            <div className='hidden  md:block'>
+            <div className='hidden  xl:block'>
                 <DesktopHome />
 
             </div>
