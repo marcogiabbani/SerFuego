@@ -7,29 +7,29 @@ function MobileFooter({ fullFooter }) {
         <div>
             {fullFooter ?
                 <div className='flex flex-col justify-between text-xl 
-            md:text-[30px]'>
+            xl:text-[30px]'>
 
                     <div className='flex flex-col justify-between text-center
-                md:flex-row md:text-left'>
+                xl:flex-row xl:text-left'>
 
                         <div className='w-40 h-full m-auto flex flex-col justify-between 
-                            md:h-auto md:m-0 md:flex-row text-sm md:text-2xl'>
-                            <div className='pb-5 md:p-0'>
+                            xl:h-auto xl:m-0 xl:flex-row text-sm xl:text-2xl'>
+                            <div className='pb-5 xl:p-0'>
                                 <Link to='https://franciscoluismatte.com/' target="_blank">
                                     <span >  F  </span>
                                 </Link>
                             </div>
-                            <div className='pb-5 md:p-0'>
+                            <div className='pb-5 xl:p-0'>
                                 <Link to='https://www.instagram.com/barthes.vhs/' target="_blank">
                                     <span>  I  </span>
                                 </Link>
                             </div>
-                            <div className='pb-5 md:p-0'>
+                            <div className='pb-5 xl:p-0'>
                                 <Link to='https://www.behance.net/franmatte' target="_blank">
                                     <span>  B  </span>
                                 </Link>
                             </div>
-                            <div className='pb-5 md:p-0'>
+                            <div className='pb-5 xl:p-0'>
                                 <Link to='https://romantiv.com/' target="_blank">
                                     <span>  R  </span>
                                 </Link>
@@ -39,7 +39,7 @@ function MobileFooter({ fullFooter }) {
                         <div>
                             <Link to='/'>
                                 <div className='text-4xl py-4
-                            md:text-[30px] md:p-0'>
+                            xl:text-[30px] xl:p-0'>
                                     <span >SF ©</span>
                                 </div>
                             </Link>
@@ -51,7 +51,7 @@ function MobileFooter({ fullFooter }) {
                 <div>
                     <Link to='/'>
                         <div className='text-4xl py-4 text-center
-                            md:text-[30px] md:p-0'>
+                            xl:text-[30px] xl:p-0'>
                             <span >SF ©</span>
                         </div>
                     </Link>

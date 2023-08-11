@@ -1,18 +1,20 @@
 import React from 'react'
 import MobileFooter from './MobileFooter'
+import Home from './Home'
 
 // eslint-disable-next-line react/prop-types
 function MobileAbout({ fullFooter }) {
     return (
-        <div className='h-[85vh] md:h-screen'>
-            <div className='h-full flex flex-col justify-between md:px-16'>
+        <div>
+        <div className='h-[85vh] xl:hidden xl:h-0'>
+            <div className='h-full flex flex-col justify-between xl:px-16'>
 
-                <div className='h-full flex flex-col justify-between px-3 md:pl-48 md:pt-32'>
-                    <div className='text-xl  md:text-6xl'>
+                <div className='h-full flex flex-col justify-between px-3 xl:pl-48 xl:pt-32'>
+                    <div className='text-xl sm:text-4xl xl:text-6xl'>
                         <p>The phenomenon of combustion manifested in light, flame and heat. Serfuego, a Design studio based in Argentina. The perception as a communication device and distancing of the trith to be communicable again.
                         </p>
                     </div>
-                    <div className='text-xl flex flex-col'>
+                    <div className='text-xl sm:text-4xl flex flex-col'>
                         <span className=''>Focus</span>
                         <span className=''>Visual Identity</span>
                         <span className=''>Naming</span>
@@ -28,7 +30,7 @@ function MobileAbout({ fullFooter }) {
                     </div>
 
                     {!fullFooter &&
-                        <div className='text-2xl'>
+                        <div className='text-2xl sm:text-4xl'>
                             <p>
                                 -
                             </p>
@@ -40,8 +42,15 @@ function MobileAbout({ fullFooter }) {
                 </div>
                 <div className=''>
                     <MobileFooter fullFooter={fullFooter} />
+                    {/* 
+                        Aca ahcer un logo que luego de 1080 0 1920 no se muestre y se muestra el footer
+                    */}
                 </div>
             </div>
+        </div>
+        <div className='hidden xl:block'>
+                    <Home />
+        </div>
         </div>
     )
 }
